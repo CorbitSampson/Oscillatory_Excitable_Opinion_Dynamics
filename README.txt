@@ -3,7 +3,7 @@
  		C.R. Sampson, J.G. Restrepo, and M.A. Porter, Oscillatory and Excitable Dynamics in an Opinion Model with Group Opinions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	Dependences and Acknowledgments:
-  	    Fig_8_generator_and_figure.m depends on the jacobianest.m file for numerical 
+  	    Fig_8_data_generator_and_builder.m depends on the jacobianest.m file for numerical 
  	    computation of the Jacobian matrix by John D'Errico. This file is available through MathWorks file Exchange at
  	    https://www.mathworks.com/matlabcentral/fileexchange/13490-adaptive-robust-numerical-differentiation.
 
