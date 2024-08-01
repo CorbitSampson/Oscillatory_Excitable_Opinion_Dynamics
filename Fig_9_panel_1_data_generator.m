@@ -76,7 +76,7 @@ for j = 1:M
 end
 % end loop over gamma values
 
-writematrix(amp1, 'figure_9_sim_H.txt') % saves output as .txt file
+writematrix(amp, 'figure_9_sim_H.txt') % saves output as .txt file
 
 % displays results as basic plot
 figure()

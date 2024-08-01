@@ -41,14 +41,14 @@ c = colorbar('northoutside');
 c.Label.String = '$\mathcal{H}(V^t, [100,400])$';
 c.Label.Interpreter = 'latex';
 set(c,'fontsize',12);
-set(c.Label,'fontsize',14)
+set(c.Label,'fontsize',17)
 view(2)
 
 nexttile
 s2 = imagesc(rvec, gammavec, MF_data_pulse);
 set(gca, 'fontsize',12)
 set(gca,'YDir','normal')
-ylabel('power-law exponent ($\gamma$)','interpreter', 'latex', 'fontsize', 14)
+ylabel('power-law exponent ($\gamma$)','interpreter', 'latex', 'fontsize', 16)
 axhand = s2.Parent;
 axhand.YLim = [2.5,6];
 view(2)
@@ -59,5 +59,5 @@ set(gca, 'fontsize',12)
 set(gca,'YDir','normal')
 axhand = s3.Parent;
 axhand.YLim = [2.5,6];
-xlabel('correlation coefficient ($r$)', 'interpreter','latex', 'fontsize', 14)
+xlabel('correlation coefficient ($r$)', 'interpreter','latex', 'fontsize', 16)
 view(2)

@@ -28,7 +28,7 @@ V = zeros(1,NT); % allocating space for order parameter V
 U = zeros(1,NT); % allocating space for order parameter U
 Y = zeros(1,NT); % allocating space for order parameter Y
 
-L = 3; % L^2 is number of independent simulations per point
+L = 5; % L^2 is number of independent simulations per point
 seedvec = linspace(0,1,L);
 
 %% defining constant parameters
@@ -65,8 +65,7 @@ for j = 1:M
         % loop over independent simulations
         for k1 = 1:L
             for k2 = 1:L
-                for k3 = 1:L
-                    initial = [seedvec(k1),seedvec(k2),seedvec(k3)]; % draws initial conditions from seedvec for each order parameter.
+                    initial = [seedvec(k1),seedvec(k1),seedvec(k2)]; % draws initial conditions from seedvec for each order parameter.
                     V(1) = initial(1); % set initial condition V^0
                     U(1) = initial(2); % set initial condition U^0
                     Y(1) = initial(3); % set initial condition Y^0
@@ -82,7 +81,6 @@ for j = 1:M
                     % end loop over timesteps
                     tempamp(counter) =  max(V(end-350:end)) - min(V(end-350:end)); % computes H from Eq.(28) for current simulation
                     counter = counter + 1;
-                end
             end
         end
         % end loop over independent simulations
@@ -93,7 +91,7 @@ for j = 1:M
 end
 % end loop over gamma values
 
-writematrix(amp1, 'figure_9_mf_H.txt') % saves output as .txt file
+writematrix(amp, 'figure_9_mf_H.txt') % saves output as .txt file
 
 % displays results as basic plot
 figure()
