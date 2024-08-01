@@ -1,6 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	This repository contains all code used for the generation of data and figures of in
  		C.R. Sampson, J.G. Restrepo, and M.A. Porter, Oscillatory and Excitable Dynamics in an Opinion Model with Group Opinions.
+	It also includes the figures as they appear in the article as .png files and the data for figures 2, 3, 4, and 9 which all have very long runtimes
+	to produce for the generator files.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	Dependences and Acknowledgments:
   	    Fig_8_data_generator_and_builder.m depends on the jacobianest.m file for numerical 
@@ -17,10 +19,15 @@
 	Additional files labeled as "data generator" generate the data used for the creation of specific 
 	figures and save the output as a .txt file. Files labeled as "builders" create the figures which are displayed in a matlab
 	figure window. Files which are labeled both as "data generators" and "builders" run nessecary simulations and create the 
-	figure in the same file (in this case no data is saved). 
+	figure in the same file (in this case no data is saved externally). 
 
-	The matlab file titled runfile.m runs all data generators for figures 3, 4, and 9. 
-	However, please note that the run tile for this file is several days.
+	The matlab file titled runfile.m runs all data generators for figures 2, 3, 4, and 9. 
+	However, please note that the run tile for this file is several days. 
 
-	Any Questions regarding the code in this repository can be directed to corbit.sampson@colorado.edu
+	We have realized the data used to generate figures 2, 3, 4, and 9. This can be found in the "data" folder. This allows these figures to be created 
+	without running runfile.m.
+
+	The figures, as they appear in article, are included as .png files in the "figures" folder.
+
+	Any Questions regarding the code, data, or figures in this repository can be directed to corbit.sampson@colorado.edu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
