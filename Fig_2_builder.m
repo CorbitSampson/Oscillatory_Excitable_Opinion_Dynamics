@@ -60,9 +60,9 @@ for j=1:L^2
     ylim([0,1])
 end
 set(gca, 'fontsize', 18)
-ylabel('$V^*$', 'fontsize', 25, 'interpreter', 'latex')
+ylabel('$V^*$', 'fontsize', 27, 'interpreter', 'latex')
 txtstring = '(a)';
-text(0.5,0.85,txtstring, 'fontsize',22,'interpreter','latex')
+text(1.2,0.84,txtstring, 'fontsize',25,'interpreter','latex')
 legend([pV4, pV1, pV2], 'location', 'northoutside','orientation', 'horizontal' ,'fontsize', 16,  'interpreter', 'latex')
 
 nexttile
@@ -77,7 +77,7 @@ end
 set(gca, 'fontsize', 18)
 ylabel('$Y^*$', 'fontsize', 25, 'interpreter', 'latex')
 txtstring = '(b)';
-text(0.5,0.85,txtstring, 'fontsize',22,'interpreter','latex')
-xlabel('$m$', 'fontsize', 25,  'interpreter', 'latex')
+text(1.2,0.84,txtstring, 'fontsize',25,'interpreter','latex')
+xlabel('$m$', 'fontsize', 27,  'interpreter', 'latex')
 tt.TileSpacing = 'compact';
 

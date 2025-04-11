@@ -16,7 +16,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % This file is sectioned off to run the data generator codes for figures
-% 2,3,4, and 9. The sections can be run one at a time using the "run
+% 2,3,4, and 10. The sections can be run one at a time using the "run
 % section" command in matlab.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,6 +54,6 @@ run('Fig_4_data_generator_ab08_cd02_mu50'); disp('finished 6/6')
 
 disp('begin running fig.9 data generators')
 
-run('Fig_9_panel_1_data_generator'); disp('finished 1/3')
-run('Fig_9_panel_2_data_generator'); disp('finished 2/3')
-run('Fig_9_panel_3_data_generator'); disp('finished 3/3')
+run('Fig_10_panel_1_data_generator'); disp('finished 1/3')
+run('Fig_10_panel_2_data_generator'); disp('finished 2/3')
+run('Fig_10_panel_3_data_generator'); disp('finished 3/3')

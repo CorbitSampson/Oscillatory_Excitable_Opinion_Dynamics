@@ -158,8 +158,9 @@ p2 = plot(NaN,NaN,'color',colors{2},'marker',markers{2},'linewidth',1.5);
 p3 = plot(NaN,NaN,'color',colors{3},'marker',markers{3},'linewidth',1.5);
 xlabel('$m$','fontsize', 20, 'interpreter', 'latex')
 ylabel('$D(V^*,Y^*)$','fontsize', 20, 'interpreter', 'latex')
+ylim([0,0.6])
 txtstring = '(a)';
-text(0.5,0.49,txtstring, 'fontsize',22,'interpreter','latex')
+text(0.1,0.55,txtstring, 'fontsize',22,'interpreter','latex')
 l2 = legend([p1,p2,p3], {['\hspace{1pt} $a=b=0.2$ \hspace{2pt}' newline '\hspace{1pt} $c=d=0.8$ \hspace{2pt}'],['\hspace{1pt} $a=b=0.5$ \hspace{2pt}' newline '\hspace{1pt} $c=d=0.5$ \hspace{2pt}'],['\hspace{1pt} $a=b=0.8$ \hspace{2pt}' newline '\hspace{1pt} $c=d=0.2$ \hspace{2pt}']},'numcolumns',3,'location','northoutside','fontsize', 14, 'interpreter','latex');
 legend('boxoff')
 
@@ -177,5 +178,6 @@ plot(m_independent, m_sweep_a08_b08_c02_d02_SIM_mu25, 'color', colors{3}, 'lines
 
 xlabel('$m$','fontsize', 20, 'interpreter', 'latex')
 ylabel('$D(V^*,Y^*)$','fontsize', 20, 'interpreter', 'latex')
+ylim([0,0.6])
 txtstring = '(b)';
-text(0.45,0.42,txtstring, 'fontsize',22,'interpreter','latex')
+text(0.1,0.55,txtstring, 'fontsize',22,'interpreter','latex')

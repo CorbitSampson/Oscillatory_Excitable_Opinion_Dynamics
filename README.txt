@@ -11,20 +11,20 @@
                   (https://www.mathworks.com/matlabcentral/fileexchange/13490-adaptive-robust-numerical-differentiation), 
                   MATLAB Central File Exchange. Retrieved July 29, 2024. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	This repository includes a number of matlab functions which make up the implementation of our stochastic opinon model
-	and mean-field maps.
+	This repository includes a number of matlab functions that make up the implementation of our stochastic opinon model
+	and mean-field maps. These functions have additional documentation that explains the intended input and corresponding output.
 
-	Additional files labeled as "data generator" generate the data used for the creation of specific 
-	figures and save the output as a .txt file. Files labeled as "builders" create the figures which are displayed in a matlab
-	figure window. Files which are labeled both as "data generators" and "builders" run nessecary simulations and create the 
+	Additional files labeled with "data_generator" in the file name generate the data used for the creation of specific 
+	figures and save the output as a .txt file. Files labeled with "builder" in the file name create the figures from the corresponding data. 
+	Files that are labeled both with "data generator" and "builder" run nessecary simulations and create the 
 	figure in the same file (in this case no data is saved). 
 
-	The matlab file titled runfile.m runs all data generators for figures 3, 4, and 9. 
-	However, please note that the run tile for this file is several days.
+	The matlab file titled runfile.m runs all data generators for figures 3, 4, and 10. 
+	However, please note that the run file for this file is several days.
 
 	The "Data" folder contains all data produced by the "data generator" files to allow figures to be generated without running the code base.
-	The "Figures" folder contains all figures for the paper both as matlab .fig files and as .png files. Note that some figures have additional labels
-	added post which are not included in the version on the repository at this time.
+	The "Figures" folder contains all figures for the paper both as matlab .fig files and .png files or .svg files as were used in the corresponding paper. 
+	Note that some figures have additional labels added in post, which are not included in the .fig file versions in this repository.
 
-	Any Questions regarding the code in this repository can be directed to corbit.sampson@colorado.edu
+	Any questions regarding the code in this repository can be directed to corbit.sampson@colorado.edu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

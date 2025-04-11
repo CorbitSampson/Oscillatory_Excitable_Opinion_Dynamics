@@ -79,23 +79,26 @@ initial = [seed1,seed1, seed3];
 figure(1)
 
 hold on
+box off
 plot(xavg, 'color', 1/255*[228,26,28], 'linewidth', 1.5)
 plot(y3avg, 'color', 1/255*[55,126,184], 'linewidth', 1.5)
 plot(xx, 'color', 1/255*[228,26,28], 'linewidth', 1.5, 'linestyle', '--')
 plot(yy, 'color', 1/255*[55,126,184], 'linewidth', 1.5, 'linestyle', '--')
-l1 = legend({'\hspace{1pt} nodes \hspace{2pt}','\hspace{1pt} hyperedges \hspace{2pt}'}, 'interpreter', 'latex');
+l1 = legend({'\hspace{1pt} nodes \hspace{2pt}','\hspace{1pt} hyperedges \hspace{2pt}'}, 'interpreter', 'latex','numcolumns',2);
 l1.Position(1) = l1.Position(1)-0.1;
 l1.Position(3) = l1.Position(3)+0.1;
 set(gca, 'fontsize', 16)
 xlabel('time', 'interpreter', 'latex')
 ylabel('$V^t,\hspace{1pt} Y^t$',  'interpreter', 'latex')
-axis([0, NT, 0, 1])
+axis([50, NT, 0, 1.2])
 
 figure(2)
-
+box off
 subplot(2,1,1)
+box off
 plot(xavg,  'color', 1/255*[228,26,28], 'linewidth', 1.5, 'linestyle', '-')
-axis([0, NT, 0, 1.1])
+box off
+axis([0, NT, -0.25, 1.4])
 ylabel('$V^t$',  'interpreter', 'latex')
 set(gca, 'fontsize', 14)
 l2 = legend('\hspace{1pt} simulation (nodes) \hspace{2pt}', 'interpreter', 'latex');
@@ -104,19 +107,20 @@ l2.Position(3) = l2.Position(3)+0.05;
 
 subplot(2,1,2)
 hold on
+box off
 plot([xx_kick(1:199);xx_kick(199)], 'color', 1/255*[228,26,28], 'linewidth', 1.5, 'linestyle', '--')
 plot(200:length(xx_kick),xx_kick(200:end), 'color', 1/255*[228,26,28], 'linewidth', 1.5, 'linestyle', '--')
 arrow1 = annotation('arrow', 'linewidth', 1.5);
 arrow1.Parent = gca;
-arrow1.Position = [200,0.7,0,-0.38];
-axis([190, 225, 0, 1.1])
+arrow1.Position = [200,-0.24,0,0.25];
+axis([195, 240, -0.25, 1.4])
 ylabel('$V^t$', 'interpreter', 'latex')
 xlabel('time', 'interpreter', 'latex')
 set(gca, 'fontsize', 14)
 l3 = legend('\hspace{1pt} mean field (nodes) \hspace{2pt}', 'interpreter', 'latex');
 l3.Position(1) = l3.Position(1)-0.05;
 l3.Position(3) = l3.Position(3)+0.05;
-
+box off
 %% additional functions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % A local version of the Meanfield_Iteration()function which can include a
